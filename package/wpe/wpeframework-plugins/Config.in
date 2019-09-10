@@ -602,6 +602,12 @@ config BR2_PACKAGE_WPEFRAMEWORK_SYSTEMCOMMANDS
     bool "SystemCommands"
     help
       SystemCommands Plugin
+      
+config BR2_PACKAGE_WPEFRAMEWORK_SYSLOGREDIRECT
+    select BR2_PACKAGE_WPEFRAMEWORK_PLUGINS
+    bool "SysLogRedirect"
+    help
+      SysLogRedirect Plugin
 
 menuconfig BR2_PACKAGE_WPEFRAMEWORK_SPARK
     bool "Spark"
